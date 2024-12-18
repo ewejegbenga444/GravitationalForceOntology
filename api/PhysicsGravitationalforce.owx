@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/margr/ontologies/2024/11/GravitationalForce"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/margr/ontologies/2024/11/GravitationalForce">
+    <Prefix name="" IRI="http://www.semanticweb.org/margr/ontologies/2024/11/GravitationalForce#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Ontology for an Intelligent Tutoring System focusing on solving gravitational force problems using F = G * (m1 * m2) / r^2.</Literal>
+    </Annotation>
+
+    <!-- Class Declarations -->
+    <Declaration>
+        <Class IRI="#GravitationalForceProblem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distance"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GravitationalConstant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Force"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Step"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Feedback"/>
+    </Declaration>
+
+    <!-- Object Property Declarations -->
+    <Declaration>
+        <ObjectProperty IRI="#hasMass"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDistance"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGravitationalConstant"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasForce"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStep"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFeedback"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#leadsTo"/>
+    </Declaration>
+
+    <!-- Data Property Declarations -->
+    <Declaration>
+        <DataProperty IRI="#value"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#description"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#message"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#text"/>
+    </Declaration>
+
+    <!-- SubClass Definitions -->
+    <SubClassOf>
+        <Class IRI="#Mass"/>
+        <Class IRI="#GravitationalForceProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Distance"/>
+        <Class IRI="#GravitationalForceProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GravitationalConstant"/>
+        <Class IRI="#GravitationalForceProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Force"/>
+        <Class IRI="#GravitationalForceProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Step"/>
+        <Class IRI="#GravitationalForceProblem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hint"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Feedback"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+
+    <!-- Individuals -->
+    <Declaration>
+        <NamedIndividual IRI="#Problem1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Step1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Step2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Step3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Step4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hint1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hint2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hint3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hint4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feedback1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feedback2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feedback3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Feedback4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mass1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Mass2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Distance1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GravitationalConstant1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Force1"/>
+    </Declaration>
+
+    <!-- Problem Definition -->
+    <ClassAssertion>
+        <Class IRI="#GravitationalForceProblem"/>
+        <NamedIndividual IRI="#Problem1"/>
+    </ClassAssertion>
+
+    <!-- Mass, Distance, Gravitational Constant -->
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMass"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Mass1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasMass"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Mass2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDistance"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Distance1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasGravitationalConstant"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#GravitationalConstant1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasForce"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Force1"/>
+    </ObjectPropertyAssertion>
+
+    <!-- Step 1 -->
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Step1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHint"/>
+        <NamedIndividual IRI="#Step1"/>
+        <NamedIndividual IRI="#Hint1"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Step1"/>
+        <Literal>Identify the masses (m1 and m2) and the distance (r) between the two objects.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#text"/>
+        <NamedIndividual IRI="#Hint1"/>
+        <Literal>Look for the values of m1, m2, and r in the problem statement.</Literal>
+    </DataPropertyAssertion>
+
+    <!-- Step 2 -->
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Step2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHint"/>
+        <NamedIndividual IRI="#Step2"/>
+        <NamedIndividual IRI="#Hint2"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Step2"/>
+        <Literal>Multiply the masses (m1 and m2) together.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#text"/>
+        <NamedIndividual IRI="#Hint2"/>
+        <Literal>Take the values of m1 and m2 and calculate their product.</Literal>
+    </DataPropertyAssertion>
+
+    <!-- Step 3 -->
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Step3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHint"/>
+        <NamedIndividual IRI="#Step3"/>
+        <NamedIndividual IRI="#Hint3"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Step3"/>
+        <Literal>Divide the product of the masses by the square of the distance (r^2).</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#text"/>
+        <NamedIndividual IRI="#Hint3"/>
+        <Literal>Take the product of the masses and divide it by r^2, where r is the distance.</Literal>
+    </DataPropertyAssertion>
+
+    <!-- Step 4 -->
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasStep"/>
+        <NamedIndividual IRI="#Problem1"/>
+        <NamedIndividual IRI="#Step4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasHint"/>
+        <NamedIndividual IRI="#Step4"/>
+        <NamedIndividual IRI="#Hint4"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#description"/>
+        <NamedIndividual IRI="#Step4"/>
+        <Literal>Multiply the result by the gravitational constant (G).</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#text"/>
+        <NamedIndividual IRI="#Hint4"/>
+        <Literal>Multiply the final result by G to get the gravitational force.</Literal>
+    </DataPropertyAssertion>
+    <!-- Feedbacks -->
+    <DataPropertyAssertion>
+        <DataProperty IRI="#message"/>
+        <NamedIndividual IRI="#Feedback1"/>
+        <Literal>Ensure the masses and distance are correctly identified.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#message"/>
+        <NamedIndividual IRI="#Feedback2"/>
+        <Literal>Double-check the product of the two masses.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#message"/>
+        <NamedIndividual IRI="#Feedback3"/>
+        <Literal>Verify the calculation of r^2 and ensure division is accurate.</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#message"/>
+        <NamedIndividual IRI="#Feedback4"/>
+        <Literal>Make sure you use the correct value of G for the final calculation.</Literal>
+    </DataPropertyAssertion>
+    <!-- Mass Values -->
+    <DataPropertyAssertion>
+        <DataProperty IRI="#value"/>
+        <NamedIndividual IRI="#Mass1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.972</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#value"/>
+        <NamedIndividual IRI="#Mass2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">7.348</Literal>
+    </DataPropertyAssertion>
+
+    <!-- Distance Value -->
+    <DataPropertyAssertion>
+        <DataProperty IRI="#value"/>
+        <NamedIndividual IRI="#Distance1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">384400</Literal>
+    </DataPropertyAssertion>
+
+    <!-- Gravitational Constant Value -->
+    <DataPropertyAssertion>
+        <DataProperty IRI="#value"/>
+        <NamedIndividual IRI="#GravitationalConstant1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">6.67430e-11</Literal>
+    </DataPropertyAssertion>
+
+    <!-- Force Value (if pre-calculated) -->
+    <DataPropertyAssertion>
+        <DataProperty IRI="#value"/>
+        <NamedIndividual IRI="#Force1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">1.982e20</Literal>
+    </DataPropertyAssertion>
+
+</Ontology>
